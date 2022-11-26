@@ -12,9 +12,15 @@ Header files gets included by preprocessor statement called "include"
 CPP files are going to compile into a .obj file and the linker will use and glue these obj files into an working .exe at the end.
 */
 
+
+void CustomPrint(const char* message); // declaration
+
 int main()
 {
-std::cout << "Hello World" << std::endl;
+
+	CustomPrint("Hello world");
+
+//std::cout << "Hello World" << std::endl;
 }
 
 /**
